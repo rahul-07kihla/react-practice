@@ -1,6 +1,8 @@
 import './App.css';
 import Welcome from './component/Welcome';
 import { format } from "date-fns";
+import Input from './component/Input';
+import Button from './component/Button';
 
 function App() {
   const date = new Date();
@@ -8,8 +10,7 @@ function App() {
   return (
     <div className="App">
       <p>{ format(date, "dd-MM-yyyy") }</p>
-      <Welcome name="hi1"></Welcome>
-      <input type="text" name="message" placeholder="Message"/><button>Send</button>
+      <Welcome name="test"></Welcome><Button></Button>
     </div>
   );
 }
